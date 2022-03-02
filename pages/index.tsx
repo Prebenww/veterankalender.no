@@ -7,6 +7,7 @@ export default function Home() {
 
     return (
         <>
+
         <div className="grid p-5 lg:px-24 md:grid-cols-2">
 
             <div className="textBlock-wrapper">
