@@ -102,7 +102,7 @@ const family = () => {
                     Veterankalenderen utgis hvert år som en honnør til alle de ca. 100 000 veteraner som har deltatt i internasjonale operasjoner  rundt om i verden, og er et symbol på vår støtte til norske veteraner og til de aktivt tjenestegjørende for den innsats de yter.
 
                 </p>
-                npm i simple-react-modal
+
             </div>
             <div className="grid place-items-center">
                 <div className="flex flex-col items-center px-4 py-6 mx-auto space-y-4 rounded-md md:w-10/12 bg-neutral-900 ">
