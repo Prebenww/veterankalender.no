@@ -22,9 +22,12 @@ export const DonationAmount: FunctionComponent<{
 };
 
 const family = () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [amount, setAmount] = useState(10);
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [scriptLoaded, setScriptLoaded] = useState(false);
 
+    // eslint-disable-next-line react-hooks/rules-of-hooks
      useEffect(() => {
          const addPaypalScript = () => {
              const script = document.createElement("script");

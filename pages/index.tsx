@@ -54,7 +54,7 @@ export default function Home() {
 
 
 
-                        Utgiver av Veterankalender er: "Veteraner hjelper Veteraner"
+                        Utgiver av Veterankalender er: Veteraner hjelper Veteraner
                     </p>
 
                 </div>
