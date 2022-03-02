@@ -115,12 +115,13 @@ const family = () => {
                     </div>
                     {showModal ? (
                         <Image
-                            src="/../public/static/qr-kode-bella.png"
+                            src="/../static/qr-kode-bella.png"
                             height={200} width={200}
+                            alt="qr-kode"
                         >
                         </Image>
                     ) : "" }
-                    <button onClick={handleModal} ><Image src="/../public/static/vipps.png" alt="vipps checkout" height={45} width={175} /></button>
+                    <button onClick={handleModal} ><Image src="/../static/vipps.png" alt="vipps checkout" height={45} width={175} /></button>
                        {scriptLoaded ? (
                         <PayPalButton
                             amount={amount}
