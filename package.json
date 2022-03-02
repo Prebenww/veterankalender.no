@@ -13,7 +13,8 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-paypal-button-v2": "^2.6.3",
-    "react-vipps-payments": "^0.1.0"
+    "react-vipps-payments": "^0.1.0",
+    "simple-react-modal": "^0.5.1"
   },
   "devDependencies": {
     "@types/node": "17.0.21",

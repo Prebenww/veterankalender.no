@@ -1,5 +1,7 @@
 import { FunctionComponent, useEffect, useState } from "react";
 import { PayPalButton } from "react-paypal-button-v2";
+import Image from "next/image";
+import Modal, {closeStyle} from 'simple-react-modal';
 
 
 export const DonationAmount: FunctionComponent<{
@@ -21,7 +23,36 @@ export const DonationAmount: FunctionComponent<{
     );
 };
 
+
+
+
+
+
+
+
+
+
+
 const family = () => {
+
+
+
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [showModal, setShowModal] = useState(false)
+// eslint-disable-next-line react-hooks/rules-of-hooks
+    const [hideModal, setHideModal] = useState(false)
+
+    const handleModal = () => {
+        if(!showModal) {
+            setShowModal(true)
+        }  else if (showModal) {
+            setShowModal(false)
+        }
+    };
+
+
+
+
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [amount, setAmount] = useState(10);
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -72,7 +103,7 @@ const family = () => {
                     Veterankalenderen utgis hvert år som en honnør til alle de ca. 100 000 veteraner som har deltatt i internasjonale operasjoner  rundt om i verden, og er et symbol på vår støtte til norske veteraner og til de aktivt tjenestegjørende for den innsats de yter.
 
                 </p>
-
+                npm i simple-react-modal
             </div>
             <div className="grid place-items-center">
                 <div className="flex flex-col items-center px-4 py-6 mx-auto space-y-4 rounded-md md:w-10/12 bg-neutral-900 ">
@@ -83,6 +114,14 @@ const family = () => {
                     <div className="flex space-x-10 text-white">
                         <DonationAmount value={299} setAmount={setAmount} amount={amount} />
                     </div>
+                    {showModal ? (
+                        <Image
+                            src="/../public/assets/qr-kode-bella.png"
+                            height={200} width={200}
+                        >
+                        </Image>
+                    ) : "" }
+                    <button onClick={handleModal} ><Image src="/../public/assets/vipps.png" alt="vipps checkout" height={45} width={175} /></button>
                        {scriptLoaded ? (
                         <PayPalButton
                             amount={amount}
