@@ -1,7 +1,6 @@
 import { FunctionComponent, useEffect, useState } from "react";
 import { PayPalButton } from "react-paypal-button-v2";
 import Image from "next/image";
-import Modal, {closeStyle} from 'simple-react-modal';
 
 
 export const DonationAmount: FunctionComponent<{
@@ -108,7 +107,7 @@ const family = () => {
             <div className="grid place-items-center">
                 <div className="flex flex-col items-center px-4 py-6 mx-auto space-y-4 rounded-md md:w-10/12 bg-neutral-900 ">
                     <h1 className="text-5xl textBlock-title text-white z-50">Kjøp her</h1>
-                    <p className="textBlock-subtitle text-white">Veterankalender er laget av veteraner og stadig tjenestegjørende i alle ledd.
+                    <p className="textBlock-subtitle text-white">Betal med Paypal eller scan QR-koden for å betale med vipps fra telefonen.
 
                     </p>
                     <div className="flex space-x-10 text-white">
